@@ -13,7 +13,7 @@ if(isset($_SESSION["id"])){ // User connected personalized navbar
             <a class='linknav' href='#'>MON FIL</a>
           </li>
           <li class='nav-item'>
-            <a class='linknav' href='backend/logout.php'>DECONNEXION</a>
+            <a class='linknav' href='backend/auth/logout.php'>DECONNEXION</a>
           </li>
         </ul>
       </div>

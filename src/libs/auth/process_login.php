@@ -3,9 +3,10 @@ session_start();
 // Connexion à la base de données
 $bdd = new PDO('mysql:host=localhost;dbname=booklet', 'root', 'root');
 
+
 if(isset($_POST['username']) && isset($_POST['password'])){
-    $nom_utilisateur = $_POST['username'];
-    $mot_de_passe = $_POST['password'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     // Vérification des informations de connexion
     $query = $bdd->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
@@ -19,7 +20,9 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         header("Location: /index.php"); // Rediriger vers la page d'accueil après la connexion
     } else {
         // Authentification échouée
-        header("Location: /login.php"); // Rediriger vers la page d'accueil après la connexion
+        $error_message = "Nom d'utilisateur ou mot de passe incorrect.";
+
+        header("Location: /login.php"); // Rediriger vers la page de login
         exit();
     }
 }

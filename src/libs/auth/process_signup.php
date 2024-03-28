@@ -13,7 +13,6 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     $existing_user = $check_query->fetch();
 
     if($existing_user){
-        echo "Ce nom d'utilisateur est déjà utilisé. Veuillez en choisir un autre.";
         header("Location: /signup.php"); // Rediriger vers la page d'accueil après la connexion
     } else {
         // Insérer les nouvelles informations d'utilisateur dans la base de données

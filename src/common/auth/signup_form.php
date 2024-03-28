@@ -9,6 +9,7 @@
         <input type="password" name="password" required><br><br>
 
         <input type="submit" value="S'inscrire">
+        <?echo $error_username?>
     </form>
     <p>Deja inscrit ? <a href="/login.php">Reprenons la ou nous en étions !</a></p>
 </center>
