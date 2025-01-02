@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,11 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/index.css">
     <link rel="stylesheet" href="/style/auth.css">
-    <title>booklet - la bibliothèque sociale</title>
+    <title>booklet</title>
 </head>
 
 <body>
-    <?php include 'elements/auth/login_form.php'; ?>
+    <header>
+        <a href="/" class="brandstyle">Booklet</a>
+    </header>
+    <?php include 'elements/auth/front_login.php';?>
 </body>
 
 </html>

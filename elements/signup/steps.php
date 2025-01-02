@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -11,14 +11,10 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/index.css">
     <link rel="stylesheet" href="/style/auth.css">
-    <title>booklet</title>
+    <title>booklet - la bibliothèque sociale</title>
 </head>
 
 <body>
-        <header>
-            <a href="/" class="brandstyle">Booklet</a>
-        </header>
-        <?php include 'elements/auth/front_signup.php';?>
+    <?php include '/elements/singup/steps/first.php'; ?>
 </body>
-
 </html>

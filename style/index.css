@@ -7,6 +7,16 @@
     src: local('YoungSerif'), url('/fonts/YoungSerif.woff') format('woff');
 }
 
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
 /* Style de la barre de navigation */
 body {
     padding: 0 10% 0 10%;
@@ -38,37 +48,46 @@ a {
     color: black;
     text-decoration: none;
     font-family: "Plus Jakarta Sans";
+    font-size: 16px;
     font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    font-feature-settings: 'ss03'on, 'liga'off;
 }
 
-p{
-    padding: 0%;
-    margin: 0%;
+p {
+    font-feature-settings: 'ss03'on, 'liga'off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 h1 {
-    font-family: 'YoungSerif';
+    font-family: "YoungSerif";
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
+    line-height: normal;
 }
 
 h2 {
-    font-family: 'Plus Jakarta Sans';
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    font-size: large;
-    line-height: 30px;
+    line-height: normal;
     font-feature-settings: 'ss03'on, 'liga'off;
 }
 
 h3 {
-    font-family: "YoungSerif";
-    font-family: normal;
-    font-size: 24px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-feature-settings: 'ss03'on, 'liga'off;
 }
 
 .speech {
@@ -105,7 +124,8 @@ h3 {
 
 .footer-button {
     color: white;
-    margin: 0 20px; /* Espacement entre les liens */
+    margin: 0 20px;
+    /* Espacement entre les liens */
     text-decoration: none;
 }
 
